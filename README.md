@@ -112,17 +112,9 @@ Initial version.
 
 ##Requirements 系统要求
 - iOS >= 4.3
-- ARC
+- ARC-
 
-## Contact 联系方式
-* Tech blog:<http://www.nijino.cn>
-* E-mail:nijino_saki@163.com
-* Sina Weibo:[@3G杨叫兽][]
-* Twitter:[@yangyubin][]
-* Facebook:[nijino_saki][]
+The MIT License (MIT)
 
 [example pic]:http://ww3.sinaimg.cn/large/540e407ajw1ejko11y21cg208s0gc7a3.gif "example pic"
 [xib example]:http://ww2.sinaimg.cn/large/540e407ajw1ejko543x1zj207f02bmx3.jpg "xib example"
-[@3G杨叫兽]:http://www.weibo.com/nijinosaki "3G杨叫兽"
-[@yangyubin]:https://twitter.com/yangyubin "欢迎在twitter上关注我"
-[nijino_saki]:http://www.facebook.com/nijinosaki1982 "欢迎在facebook上关注我"

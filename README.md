@@ -1,20 +1,25 @@
 ![example pic][example pic]  
-##Introduction 简介
-A custom audio circular progress view for iOS.You can customlize its frame,background circle color & progress circle color and circle width as you wish.  
+
+## Update Information
+The origin CircularProgressView used AVAudioPlayer to play music, the defect is that it can't support the music from the Internet, it just support the local music file. Here we use MPMoviePlayerController, which support the music from the Internet to update the CircularProgressView.
+
+原始的CircularProgressView使用AVAudioPlayer播放音乐，缺点是它不支持网络上的音乐，它仅仅支持播放本地音乐文件。 这里我们使用MPMoviePlayerController 去更新CircularProgressView， 它支持播放网络上的音乐。
+
+
+###Introduction 简介
+A custom audio circular progress view for iOS.You can customlize its frame,background circle color & progress circle color and circle width as you wish. 
 一个iOS圆形进度条开源库，你可以定制它的大小、进度条背景色和前景色以及进度条的宽度。
 
-##Latest Update 最新更新内容
+###Latest Update 最新更新内容
 Now you can drag the progress to precise location to where it should to play.  
 现在支持拖拽进度以便精确控制播放进度。
 
-##Installation 安装方法
-1.Add AVFoundation.framework into your project.  
-1.在工程项目中加入AVFoundation.framework框架。
+###Installation 安装方法
 
-2.Drop "CircularProgressView.h" & "CircularProgressView.m" into your project.  
-2.将“CircularProgressView.h“和”CircularProgressView.m“文件拖拽至工程目录。
+Drop "CircularProgressView.h" & "CircularProgressView.m" into your project.  
+将“CircularProgressView.h“和”CircularProgressView.m“文件拖拽至工程目录。
 
-##Usage 使用方法
+###Usage 使用方法
 First in your ViewController import the header file `CircularProgressView.h`, and create a CircularProgressView property to keep a reference:  
 首先在你的ViewController中导入`CircularProgressView.h`头文件并且新建一个圆形进度条属性来作为一个引用:  
 `@property (nonatomic) CircularProgressView *circularProgressView;`  
@@ -70,7 +75,7 @@ then define circular progress view propertys in viewDidLoad method like this:
     //add CircularProgressView
     [self.view addSubview:self.circularProgressView];
 
-##Methods 方法
+###Methods 方法
 You can play,pause & stop audio by below methods declared in the header file `CircularProgressView.h`  
 你可以通过如下方法播放、暂停或者停止音频，这些方法声明在`CircularProgressView.h`头文件中:
 
@@ -78,11 +83,8 @@ You can play,pause & stop audio by below methods declared in the header file `Ci
     - (void)pause;
     - (void)stop;
 
-##Demo 示例
-You can find a demo project in this repository.  
-你可以在这个开源库中找到一个示例工程。
 
-##Version History  版本信息
+###Version History  版本信息
 * version 1.5  
 Replace NSTimer with CADisplayLink.  
 用CADisplayLink替换NSTimer。
